@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html style="font-size: 16px;" lang="en"><head>
+  
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.7/firebase-auth.js"></script>
+    <script src='js/auth.js'></script>
+    <script>var firebaseConfig = {
+      apiKey: "AIzaSyB0rAVj2Vj7mk8DXkoovvt3l6BSL4x8CAA",
+    authDomain: "cognizance-bb47e.firebaseapp.com",
+    projectId: "cognizance-bb47e",
+    storageBucket: "cognizance-bb47e.appspot.com",
+    messagingSenderId: "783710377893",
+    appId: "1:783710377893:web:38dce16cebe6d725a23a4c",
+    measurementId: "G-XFH9E9EZCS"
+  };</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <title>Home</title>
+    <link rel="stylesheet" href='css/nicepage.css' media="screen">
+<link rel="stylesheet" href='css/auth.css' media="screen">
+    <script class="u-script" type="text/javascript" src='js/jquery.js' defer=""></script>
+    <script class="u-script" type="text/javascript" src='js/nicepage.js' defer=""></script>
+    <meta name="generator" content="Nicepage 4.20.1, nicepage.com">
+    <link id="u-theme-google-font" rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i">
+    
+    
+    <script type="application/ld+json">{
+		"@context": "http://schema.org",
+		"@type": "Organization",
+		"name": ""
+}</script>
+    <meta name="theme-color" content="#478ac9">
+    <meta property="og:title" content="Home">
+    <meta property="og:type" content="website">
+  </head>
+  <body class="u-body u-xl-mode" data-lang="en">
+    <section class="u-clearfix u-image u-shading u-section-1" id="sec-3fa9" data-image-width="1280" data-image-height="853">
+      <div class="u-clearfix u-sheet u-sheet-1">
+        <div class="u-expanded-width u-tab-links-align-justify u-tabs u-tabs-1">
+          <ul class="u-spacing-0 u-tab-list u-unstyled" role="tablist">
+            <li class="u-tab-item u-tab-item-1" role="presentation">
+              <a class="active u-active-white u-button-style u-hover-palette-1-base u-palette-5-dark-1 u-tab-link u-text-active-palette-2-base u-text-black u-tab-link-1" id="link-tab-14b7" href="#tab-14b7" role="tab" aria-controls="tab-14b7" aria-selected="true">Log In</a>
+            </li>
+            <li class="u-tab-item u-tab-item-2" role="presentation">
+              <a class="u-active-white u-button-style u-hover-palette-1-base u-palette-5-dark-1 u-tab-link u-text-active-palette-2-base u-text-black u-tab-link-2" id="link-tab-0da5" href="#tab-0da5" role="tab" aria-controls="tab-0da5" aria-selected="false">Sign Up</a>
+            </li>
+          </ul>
+          <div class="u-tab-content">
+            <div class="u-align-left u-container-align-center u-container-style u-gradient u-tab-active u-tab-pane u-tab-pane-1" id="tab-14b7" role="tabpanel" aria-labelledby="link-tab-14b7">
+              <div class="u-container-layout u-valign-middle u-container-layout-1">
+                <div class="u-align-center u-form u-form-1">
+                  <form action="https://forms.nicepagesrv.com/Form/Process" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 15px;" source="email">
+                    <div class="u-form-group u-form-name u-label-none">
+                      <label for="name-ef64" class="u-label">Name</label>
+                      <input type="email" placeholder="Email" id="email" name="email" class="u-border-3 u-border-black u-input u-input-rectangle u-radius-35 u-input-1" required="">
+                    </div>
+                    <div class="u-form-email u-form-group u-label-none">
+                      <label for="email-ef64" class="u-label">Email</label>
+                      <input type="password" placeholder="Password" id="password" name="password" class="u-border-3 u-border-black u-input u-input-rectangle u-radius-35 u-input-2" required="required">
+                    </div>
+                    <div class="u-align-center u-form-group u-form-submit">
+                      <a href="#" class="u-btn u-btn-round u-btn-submit u-button-style u-palette-4-dark-1 u-radius-35 u-btn-1">Log In</a>
+                      <input type="submit" value="submit" class="u-form-control-hidden" onclick="signIn()" id="signIn">
+                    </div>
+                    <div class="u-form-send-message u-form-send-success">#FormSendSuccess</div>
+                    <div class="u-form-send-error u-form-send-message">#FormSendError</div>
+                    <input type="hidden" value="" name="recaptchaResponse">
+                    <input type="hidden" name="formServices" value="abaf1b3681a0c65cba0c921be9fc2aaa">
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="u-container-style u-gradient u-tab-pane u-tab-pane-2" id="tab-0da5" role="tabpanel" aria-labelledby="link-tab-0da5">
+              <div class="u-container-layout u-valign-middle u-container-layout-2">
+                <div class="u-align-center u-form u-form-2">
+                  <form action="https://forms.nicepagesrv.com/Form/Process" class="u-clearfix u-form-spacing-15 u-form-vertical u-inner-form" style="padding: 15px;" source="email">
+                    <div class="u-form-group u-form-name u-label-none">
+                      <label for="name-ef64" class="u-label">Name</label>
+                      <input type="text" placeholder="Username" id="username" name="username" class="u-border-3 u-border-black u-input u-input-rectangle u-radius-35 u-input-3" required="">
+                    </div>
+                    <div class="u-form-email u-form-group u-label-none u-form-group-5">
+                      <label for="text-61cb" class="u-label">Input</label>
+                      <input type="email" placeholder="Email" id="email1" name="text" class="u-border-3 u-border-black u-input u-input-rectangle u-radius-35 u-input-4">
+                    </div>
+                    <div class="u-form-group u-label-none">
+                      <label for="email-ef64" class="u-label">Email</label>
+                      <input type="password" placeholder="Password" id="password1" name="password" class="u-border-3 u-border-black u-input u-input-rectangle u-radius-35 u-input-5" required="required">
+                    </div>
+                    <div class="u-align-center u-form-group u-form-submit">
+                      <a href="#" class="u-btn u-btn-round u-btn-submit u-button-style u-palette-4-dark-1 u-radius-35 u-btn-2">Sign Up</a>
+                      <input type="submit" value="submit" class="u-form-control-hidden" onclick="signUp()" id="signUp">
+                    </div>
+                    <div class="u-form-send-message u-form-send-success">#FormSendSuccess</div>
+                    <div class="u-form-send-error u-form-send-message">#FormSendError</div>
+                    <input type="hidden" value="" name="recaptchaResponse">
+                    <input type="hidden" name="formServices" value="abaf1b3681a0c65cba0c921be9fc2aaa">
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  
+</body></html>
